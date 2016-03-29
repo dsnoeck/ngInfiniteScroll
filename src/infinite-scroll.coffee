@@ -203,4 +203,7 @@ mod.directive 'infiniteScroll', ['$rootScope', '$window', '$interval', 'THROTTLE
         handler()
       $interval.cancel checkInterval
     )
+
+    if typeof module != "undefined" && typeof exports != "undefined" && module.exports == exports
+      module.exports = 'infinite-scroll'
 ]
