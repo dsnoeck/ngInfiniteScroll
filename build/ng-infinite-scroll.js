@@ -1,4 +1,4 @@
-/* ng-infinite-scroll - v1.2.1 - 2016-02-09 */
+/* ng-infinite-scroll - v1.2.1 - 2016-03-29 */
 var mod;
 
 mod = angular.module('infinite-scroll', []);
@@ -186,3 +186,7 @@ mod.directive('infiniteScroll', [
     };
   }
 ]);
+
+if (typeof module !== "undefined" && typeof exports !== "undefined" && module.exports === exports) {
+  module.exports = 'infinite-scroll';
+}
